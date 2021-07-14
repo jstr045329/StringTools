@@ -14,5 +14,7 @@ namespace string_tools {
     std::vector<std::string> split_on_whitespace(std::string text);
     bool str_in_set(std::set<std::string>, std::string);
     bool is_integer(const std::string s);
+
+    // Important: This function uses malloc, so you have to free the result when you're done using it:
     char* string2CharArray(std::string s);
 }
